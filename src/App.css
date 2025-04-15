@@ -1,0 +1,70 @@
+/* Global styles */
+html {
+  background-color: black;
+  font-size: 2vh;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  /* or 'Space Grotesk', sans-serif */
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-size: 1.2rem;
+}
+
+.home-container {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  right: 0;
+  padding: 0 2rem;
+}
+
+
+/* Nav bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 80vw;
+  padding: 1rem;
+  background-color: black;
+  z-index: 1000;
+}
+
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Headings */
+h1,
+h2 {
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Optional: Container for page content */
+div {
+  padding: 0 2rem;
+}
+
+hr {
+  margin-left: 0;
+}
+
+.proj-desc {
+  margin-bottom: 5vh;
+}

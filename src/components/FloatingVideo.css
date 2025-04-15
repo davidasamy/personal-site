@@ -1,0 +1,23 @@
+.floating-video {
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    width: 60vw;
+    box-shadow: 0 10px 20px rgba(10, 10, 10, 0.4);
+    border-radius: 3px;
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+    pointer-events: none;
+}
+
+
+.floating-video-wrapper {
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    perspective: 1000px;
+    padding-bottom: 2vh;
+    padding-top: 4vh;
+    /* smaller = more dramatic depth */
+}
