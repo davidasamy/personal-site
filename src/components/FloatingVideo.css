@@ -12,10 +12,6 @@
 
 
 .floating-video-wrapper {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
     perspective: 1000px;
     padding-bottom: 2vh;
     padding-top: 4vh;

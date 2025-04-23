@@ -3,9 +3,8 @@ import FloatingVideo from '../components/FloatingVideo'; // adjust the path as n
 function Work() {
     return (
         <div>
-            <h1>work</h1>
             <div className="proj-box">
-                <h2>vision targeting system</h2>
+                <h2 className="proj-title">vision targeting system</h2>
                 <FloatingVideo src="/robots.mp4" />
 
                 <div className="proj-desc">
@@ -15,7 +14,7 @@ function Work() {
             </div>
 
             <div className="proj-box">
-                <h2>pose analysis and viewer tools</h2>
+                <h2 className="proj-title">pose analysis and viewer tools</h2>
 
                 <FloatingVideo src="/sleap-viewer.mov" />
                 <div className="proj-desc">

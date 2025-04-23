@@ -38,6 +38,9 @@ nav {
   background: rgba(0, 0, 0, 0.3);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  gap: 2rem;
+
 }
 
 nav a {
@@ -78,7 +81,7 @@ hr {
 .proj-box {
   background-color: rgb(20, 20, 20);
   width: auto;
-  padding: 5vh;
+  padding: 5vw;
   padding-top: 0.5vh;
   padding-bottom: 1vh;
   margin: 5vh;
