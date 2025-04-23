@@ -29,20 +29,27 @@ body {
 nav {
   position: fixed;
   top: 0;
-  width: 80vw;
-  padding: 1rem;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav a {
-  margin-right: 1rem;
-  text-decoration: none;
+  font-size: 1.2rem;
   color: white;
-  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ffff;
 }
 
 /* Headings */
@@ -66,4 +73,14 @@ hr {
 
 .proj-desc {
   margin-bottom: 5vh;
+}
+
+.proj-box {
+  background-color: rgb(20, 20, 20);
+  width: auto;
+  padding: 5vh;
+  padding-top: 0.5vh;
+  padding-bottom: 1vh;
+  margin: 5vh;
+  border-radius: 1vh;
 }

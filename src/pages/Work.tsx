@@ -4,18 +4,23 @@ function Work() {
     return (
         <div>
             <h1>work</h1>
+            <div className="proj-box">
+                <h2>vision targeting system</h2>
+                <FloatingVideo src="/robots.mp4" />
 
-            <FloatingVideo src="/robots.mp4" />
-
-            <div className="proj-desc">
-                <p>vision-based targeting system for detecting and shooting enemies. developed as part of the UW’s competitive robotics team.
-                </p>
+                <div className="proj-desc">
+                    <p>vision-based targeting system for detecting and shooting enemies. worked on development of classification and integration as part of the UW’s competitive robotics team.
+                    </p>
+                </div>
             </div>
 
-            <FloatingVideo src="/sleap-viewer.mov" />
+            <div className="proj-box">
+                <h2>pose analysis and viewer tools</h2>
 
-            <div className="proj-desc">
-                <p>interactive pose viewer for sleap-io, a tool I helped develop at the salk institute. built in python and compiled to webassembly for fast performance.</p>
+                <FloatingVideo src="/sleap-viewer.mov" />
+                <div className="proj-desc">
+                    <p>interactive pose viewer for sleap-io, a tool I helped develop at the salk institute. built in python and compiled to webassembly for fast performance.</p>
+                </div>
             </div>
 
             {/* <FloatingVideo src="/sleap-viewer.mov" />
