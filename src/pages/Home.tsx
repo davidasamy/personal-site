@@ -1,24 +1,35 @@
 import { useEffect } from 'react';
 
+const preloadAssets = [
+    { href: '/sleap-viewer.mov', as: 'video', type: 'video/quicktime' },
+    { href: '/robots.mp4', as: 'video', type: 'video/mp4' },
+    // Add more assets here as needed
+];
+
 function Home() {
     useEffect(() => {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'video';
-        link.href = '/sleap-viewer.mov';
-        link.type = 'video/quicktime'; // or 'video/mp4' if it's .mp4
-        document.head.appendChild(link);
+        const links: HTMLLinkElement[] = [];
+
+        preloadAssets.forEach(({ href, as, type }) => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = as;
+            link.href = href;
+            link.type = type;
+            document.head.appendChild(link);
+            links.push(link);
+        });
 
         return () => {
-            document.head.removeChild(link);
+            links.forEach((link) => document.head.removeChild(link));
         };
     }, []);
 
     return (
         <div className="home-container">
-            <h1>I'm David Samy</h1>
+            <h1>David Samy</h1>
             <p>
-                Currently a student at the University of Washington. I'm interested in neuroscience, computer vision, robotics, and math.
+                Currently a student at the University of Washington, interested in neuroscience, computer vision, robotics, and math.
             </p>
         </div>
     );
