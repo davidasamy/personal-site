@@ -2,7 +2,7 @@ import FloatingVideo from '../components/FloatingVideo'; // adjust the path as n
 
 function Work() {
     return (
-        <div>
+        <div className="work-page">
             <div className="proj-box">
                 <h2 className="proj-title">vision targeting system</h2>
                 <FloatingVideo src="/robots.mp4" />

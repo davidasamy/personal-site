@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Script';
+  src: url('/AnthonioScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -11,9 +19,9 @@ html {
 body {
   background-color: rgb(15, 15, 15);
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Forum', sans-serif;
   /* or 'Space Grotesk', sans-serif */
-  text-shadow: 0px 0 3px rgba(255, 255, 255, 0.5);
+  /* text-shadow: 0px 0 3px rgba(255, 255, 255, 0.5); */
   margin: 0;
   padding: 0;
   padding-top: 60px;
@@ -21,52 +29,77 @@ body {
 }
 
 .home-container {
-  position: absolute;
-  top: 20vh;
-  left: 10vw;
   right: 0;
-  padding: 0 2rem;
+  width: 100%;
+  text-align: center;
+  top: 40vh;
+  /* justify-content: center; */
+  padding: 20rem;
+  font-size: 2rem;
 }
 
 
-/* Nav bar */
-nav {
+.main-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
   backdrop-filter: blur(8px);
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  /* background: rgba(0, 0, 0, 0.3); */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1000;
+  transition: all 1s ease;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 3rem;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+  margin-bottom: 3vh;
+  margin-top: 3vh
+}
+
+.nav-divider {
+  width: 15rem;
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 0.5rem 0;
+  opacity: 30%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
   justify-content: center;
-  gap: 2rem;
-
 }
 
-nav a {
-  font-size: 1.2rem;
+.nav-links a {
   color: white;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
-  transition: color 0.3s, text-shadow 0.3s;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.5s ease;
 }
 
-nav a:hover {
-  color: #00ff00;
-  text-shadow: 0 0 10px #00ffff;
+.nav-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
 }
 
 /* Headings */
 h1,
 h2 {
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+
+  /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.6); */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 10vh;
+  font-family: Script;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 /* Optional: Container for page content */
@@ -84,7 +117,7 @@ hr {
 
 .proj-box {
   background-color: rgb(20, 20, 20);
-  width: 80%;
+  width: min(80%, 800px);
   padding: min(10vw, 100px);
   padding-top: 0.5vh;
   padding-bottom: 1vh;
@@ -96,6 +129,22 @@ hr {
   transition: all 0.2s ease;
 }
 
-.main-window {
-  margin-left: 0;
+
+.work-page {
+  margin-top: max(10vw, 20vh);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-title {
+  margin-top: 1.4rem;
+  margin-bottom: 0;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 10;
+  font-size: min(5vw, 2.5rem);
+  font-style: normal;
+  text-align: center;
 }

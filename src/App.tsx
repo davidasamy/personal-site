@@ -6,8 +6,12 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <nav>
-        <Link to="/">main</Link><Link to="/Work">work</Link>
+      <nav className="main-nav">
+        <h1 className="site-title">David Samy</h1>
+        <div className="nav-links">
+          <Link to="/">main</Link>
+          <Link to="/Work">work</Link>
+        </div>
       </nav>
 
       <Routes>

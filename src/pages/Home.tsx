@@ -27,7 +27,6 @@ function Home() {
 
     return (
         <div className="home-container">
-            <h1>David Samy</h1>
             <p>
                 Currently a student at the University of Washington, interested in neuroscience, computer vision, robotics, and math.
             </p>

@@ -2,7 +2,7 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    width: 50vw;
+    width: min(600px, 45vw);
     box-shadow: 0 10px 20px rgba(10, 10, 10, 0.4);
     border-radius: 3px;
     transform-style: preserve-3d;
@@ -12,8 +12,12 @@
 
 
 .floating-video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     perspective: 1000px;
     padding-bottom: 2vh;
     padding-top: 4vh;
+    margin-top: 0;
     /* smaller = more dramatic depth */
 }
