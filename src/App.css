@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Global styles */
 html {
   background-color: black;
@@ -66,9 +70,9 @@ h1 {
 }
 
 /* Optional: Container for page content */
-div {
+/* div {
   padding: 0 2rem;
-}
+} */
 
 hr {
   margin-left: 0;
@@ -80,10 +84,18 @@ hr {
 
 .proj-box {
   background-color: rgb(20, 20, 20);
-  width: auto;
-  padding: 5vw;
+  width: 80%;
+  padding: min(10vw, 100px);
   padding-top: 0.5vh;
   padding-bottom: 1vh;
-  margin: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   border-radius: 1vh;
+  transition: all 0.2s ease;
+}
+
+.main-window {
+  margin-left: 0;
 }

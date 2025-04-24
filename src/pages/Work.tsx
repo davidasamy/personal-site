@@ -22,12 +22,6 @@ function Work() {
                 </div>
             </div>
 
-            {/* <FloatingVideo src="/sleap-viewer.mov" />
-
-            <div className="proj-desc">
-                <p>pose viewer developed to demonstrate capability of package I helped develop (sleap-io). coded in python, compiled to webassembly, to run in the browser!</p>
-            </div> */}
-
         </div>
     );
 }
