@@ -14,8 +14,8 @@ function FloatingVideo({ src }: FloatingVideoProps) {
             const x = (e.clientX / innerWidth - 0.5) * 2;
             const y = (e.clientY / innerHeight - 0.5) * 2;
 
-            const rotateX = y * 10;
-            const rotateY = -x * 10;
+            const rotateX = y * -30;
+            const rotateY = -x * -30;
 
             if (videoRef.current) {
                 videoRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;

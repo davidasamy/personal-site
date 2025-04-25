@@ -1,3 +1,4 @@
+/* Font */
 @font-face {
   font-family: 'Script';
   src: url('/AnthonioScript.ttf') format('truetype');
@@ -5,12 +6,11 @@
   font-style: normal;
 }
 
-
+/* Reset and Global Styles */
 * {
   box-sizing: border-box;
 }
 
-/* Global styles */
 html {
   background-color: black;
   font-size: 2vh;
@@ -20,25 +20,13 @@ body {
   background-color: rgb(15, 15, 15);
   color: white;
   font-family: 'Forum', sans-serif;
-  /* or 'Space Grotesk', sans-serif */
-  /* text-shadow: 0px 0 3px rgba(255, 255, 255, 0.5); */
   margin: 0;
   padding: 0;
   padding-top: 60px;
   font-size: 1.2rem;
 }
 
-.home-container {
-  right: 0;
-  width: 100%;
-  text-align: center;
-  top: 40vh;
-  /* justify-content: center; */
-  padding: 20vw;
-  font-size: max(2vw, 25px);
-}
-
-
+/* Navigation */
 .main-nav {
   position: fixed;
   top: 0;
@@ -49,18 +37,15 @@ body {
   flex-direction: column;
   align-items: center;
   backdrop-filter: blur(8px);
-  /* background: rgba(0, 0, 0, 0.3); */
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 1000;
   transition: all 1s ease;
 }
 
 .site-title {
-  margin: 0;
+  margin: 3vh 0;
   font-size: max(3vw, 40px);
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
-  margin-bottom: 3vh;
-  margin-top: 3vh
 }
 
 .nav-divider {
@@ -89,62 +74,101 @@ body {
   text-shadow: 0 0 10px #ffffff;
 }
 
-/* Headings */
+/* Typography */
 h1,
 h2 {
-
-  /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.6); */
+  /* Add shared heading styles here if needed */
 }
 
 h1 {
   font-size: 10vw;
-  font-family: Script;
+  font-family: 'Script';
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-}
-
-/* Optional: Container for page content */
-/* div {
-  padding: 0 2rem;
-} */
-
-hr {
-  margin-left: 0;
-}
-
-.proj-desc {
-  margin-bottom: 5vh;
-}
-
-.proj-box {
-  background-color: rgb(20, 20, 20);
-  width: min(80%, 800px);
-  padding: min(10vw, 100px);
-  padding-top: 0.5vh;
-  padding-bottom: 1vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  border-radius: 1vh;
-  transition: all 0.2s ease;
-}
-
-
-.work-page {
-  margin-top: max(10vw, 20vh);
-}
-
-#root {
-  width: 100%;
-  height: 100%;
 }
 
 .proj-title {
   margin-top: 1.4rem;
   margin-bottom: 0;
-  font-family: "Ubuntu Mono", monospace;
+  /* font-family: "Ubuntu Mono", monospace; */
   font-weight: 10;
   font-size: min(5vw, 2.5rem);
   font-style: normal;
   text-align: center;
+}
+
+/* Home Page */
+.home-container {
+  right: 0;
+  width: 100%;
+  text-align: center;
+  top: 40vh;
+  padding: 20vw;
+  font-size: max(2vw, 25px);
+}
+
+.scaling-text {
+  animation: scaling 3s ease-in-out infinite;
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02, 1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Work Page */
+.work-page {
+  margin-top: max(10vw, 20vh);
+}
+
+.proj-box {
+  background-color: rgb(20, 20, 20);
+  width: min(70%, 1500px);
+  padding: min(10vw, 100px);
+  padding-top: 0.5vh;
+  padding-bottom: 1vh;
+  margin: 10vh auto;
+  border-radius: 0.5vh;
+  transition: all 1s ease;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.proj-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+.proj-box:hover {
+  transform: scale(1.1);
+}
+
+.proj-desc {
+  display: flex;
+  flex: 1 1 40%;
+  min-width: 260px;
+  text-align: left;
+}
+
+/* Misc */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  margin-left: 0;
 }

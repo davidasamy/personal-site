@@ -2,22 +2,29 @@
     /* top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    width: min(600px, 45vw);
-    box-shadow: 0 10px 20px rgba(10, 10, 10, 0.4);
+    width: max(200px, 25vw);
     border-radius: 3px;
     transform-style: preserve-3d;
     transition: transform 0.2s ease;
     pointer-events: none;
+    /* animation: scaling 3s ease-in-out infinite; */
 }
 
-
 .floating-video-wrapper {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     perspective: 1000px;
     padding-bottom: 2vh;
     padding-top: 4vh;
     margin-top: 0;
+
+    display: flex;
+    transition: all 1s ease;
+    will-change: transform;
     /* smaller = more dramatic depth */
+}
+
+.floating-video-wrapper:hover {
+    transform: scale(1.6);
 }
