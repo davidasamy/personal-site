@@ -161,6 +161,7 @@ h1 {
   flex: 1 1 40%;
   min-width: 260px;
   text-align: left;
+  padding: 20px;
 }
 
 /* Misc */
